@@ -1,0 +1,96 @@
+/* Jirka oo dhan aa dhexda keeno*/
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* Sanduuqa login box-ka */
+.login-box{
+    background-color: white;
+    padding : 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px;
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+/*Qoraalka heading ka */
+h1{
+text-align: center;
+color: #333;
+    font-size: 24px;
+}
+/* Inputs iyo buttons */
+input, button{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+/* Button color */
+button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;   
+    font-weight: bold;
+
+}
+button:hover{
+    background-color: #0056b3;
+}
+/* Active state for inputs */
+input:focus{
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.error{
+    border: 2px solid red;
+    background-color: #ffe6e6;
+    animation: ruxrux 0.3s; 
+}
+@keyframes ruxrux{
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+/* 1. HAGAAJINTA BAAXADDA (Wrapper) */
+.input-container {
+    position: relative; /* Waa guriga ay isha dhex fadhiso */
+    width: 100%;        /* Waa inuu buuxiyaa booska */
+}
+
+/* 2. SI INPUT-KU U NOQDO 100% */
+.input-container input {
+    width: 100%;        /* Buuxi weelkaaga */
+    box-sizing: border-box; /* Hubi in padding-ka uusan balaarineyn */
+    padding-right: 40px;    /* Boos u baneey isha si qoraalku uusan u galin */
+}
+
+/* 3. MEELAYNTA ISHA (Positioning) */
+#eyeIcon {
+    position: absolute;
+    right: 15px;        /* Dhinaca midig ka soo durug */
+    top: 50%;           /* Dhexda Vertical ah imow */
+    transform: translateY(-50%); /* Dhex-dhexaadin sax ah */
+    cursor: pointer;
+    font-size: 18px;    /* Cabirka isha */
+    user-select: none;  /* Si aan loo highlight-gareyn marka la gujiyo */
+}
+
+/* 4. QARI ISHA BROWSER-KA (Muhiim) 🚫 */
+/* Koodhkan wuxuu daminayaa isha foolxun ee Microsoft Edge/Chrome */
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
