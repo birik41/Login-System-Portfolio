@@ -1,29 +1,25 @@
-    function sooDhawee(){
 
-            var inputElement = document.getElementById("userIn");
-            var passInput = document.getElementById("passIn");
-           
-            var magac = inputElement.value;
-             var sirta = passInput.value;
-            if(magac === "" || sirta === ""){
-                inputElement.classList.add("error");
-                passInput.classList.add("error");
-                alert("Fadlan gari magacaaga iyo sirtaada!");
-            } else {
-                inputElement.classList.remove("error");
-                passInput.classList.remove("error");
-                alert(" soo dhawoow, " + magac + "!");
-            }
-        }
-       function badalmuuqaalka() {
-        var passInput = document.getElementById("passIn");
-        var icon = document.getElementById("eyeIcon"); 
+/**
+ * Toggle Password Visibility
+ * Switches the input type between 'password' and 'text'
+ */
+function togglePasswordVisibility() {
+    // 1. Get the password input and the icon element
+    const passwordInput = document.getElementById("passIn");
+    const icon = document.getElementById("eyeIcon");
+
+    // 2. Check current state and toggle
+    if (passwordInput.type === "password") {
         
-        if (passInput.type === "password") {
-            passInput.type = "text";
-            icon.textContent = "🙈"; // Daanyeer indhaha xirtay
-        } else {
-            passInput.type = "password";
-            icon.textContent = "👁️"; // Il furan
-        }
+        // Show Password
+        passwordInput.type = "text";
+        icon.textContent = "🙈"; // Change icon to 'Hide' state
+        
+    } else {
+        
+        // Hide Password
+        passwordInput.type = "password";
+        icon.textContent = "👁️"; // Change icon back to 'Show' state
+        
     }
+}
