@@ -1,4 +1,4 @@
-/* Jirka oo dhan aa dhexda keeno*/
+
 body {
     background-color: #f0f2f5;
     display: flex;
@@ -8,8 +8,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
 }
-/* Sanduuqa login box-ka */
+
+.login-box h2{
+    text-align: center;      /
+    margin-bottom: 30px;     
+    color: #333;             
+    font-size: 24px;         
+    font-weight: 600;        
+}
 .login-box{
+    
     background-color: white;
     padding : 40px;
     border-radius: 10px;
@@ -21,7 +29,7 @@ body {
     gap: 15px;
 
 }
-/*Qoraalka heading ka */
+
 h1{
 text-align: center;
 color: #333;
@@ -64,32 +72,30 @@ input:focus{
     75% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
 }
-/* 1. HAGAAJINTA BAAXADDA (Wrapper) */
+
 .input-container {
-    position: relative; /* Waa guriga ay isha dhex fadhiso */
-    width: 100%;        /* Waa inuu buuxiyaa booska */
+    position: relative; 
+    width: 100%;      
 }
 
-/* 2. SI INPUT-KU U NOQDO 100% */
+
 .input-container input {
-    width: 100%;        /* Buuxi weelkaaga */
-    box-sizing: border-box; /* Hubi in padding-ka uusan balaarineyn */
-    padding-right: 40px;    /* Boos u baneey isha si qoraalku uusan u galin */
+    width: 100%;     
+    box-sizing: border-box;
+    padding-right: 40px;    
 }
 
-/* 3. MEELAYNTA ISHA (Positioning) */
 #eyeIcon {
     position: absolute;
-    right: 15px;        /* Dhinaca midig ka soo durug */
-    top: 50%;           /* Dhexda Vertical ah imow */
-    transform: translateY(-50%); /* Dhex-dhexaadin sax ah */
+    right: 15px;      
+    top: 50%;        
+    transform: translateY(-50%);
     cursor: pointer;
-    font-size: 18px;    /* Cabirka isha */
-    user-select: none;  /* Si aan loo highlight-gareyn marka la gujiyo */
+    font-size: 18px;    
+    user-select: none; 
 }
 
-/* 4. QARI ISHA BROWSER-KA (Muhiim) 🚫 */
-/* Koodhkan wuxuu daminayaa isha foolxun ee Microsoft Edge/Chrome */
+
 input::-ms-reveal,
 input::-ms-clear {
     display: none;
