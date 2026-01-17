@@ -8,19 +8,22 @@
 </head>
 <body>
  
-    <div class="login-box">
-
-        <h1>Welcome back</h1>
-
-        <input type="text" placeholder="Username" id="userIn" />
-        <div class="input-container">
-            <input type="password" placeholder="Password" id="passIn" />
-            <span id="eyeIcon"onclick="badalmuuqaalka()">👁️</span> 
-        </div>
-        <button onclick="welcome()">Login In</button>
-
-        <p>Don't have an account?</p>
+   <div class="login-box">
+    <h2>Member Login</h2>
+    
+    <div class="input-container">
+        <input type="text" placeholder="Username or Email" id="userInput">
     </div>
+
+    <div class="input-container">
+        <input type="password" placeholder="Password" id="passIn">
+        <span id="eyeIcon" onclick="togglePasswordVisibility()">👁️</span>
+    </div>
+
+    <button onclick="login()">Log In</button>
+
+    <p class="footer-text">Don't have an account? <a href="#">Sign up</a></p>
+</div>
        <script src="script.js"></script>
 </body>
 </html>
